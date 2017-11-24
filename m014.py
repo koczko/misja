@@ -14,4 +14,5 @@ for name in glob('/bin/*'):
 
   str = aes_e.decrypt(flag)
   if not re.compile(r'[^\x20-\x80]').search(str):
-    print "klu
+    print "klucz: " + name
+    print str
